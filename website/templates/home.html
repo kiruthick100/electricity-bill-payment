@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <center>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Login</title>
+            <link rel="stylesheet" href="../static/style1.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        </head>
+        <body>
+            <div class="login">
+                <h1>Home</h1>
+                <div class="links">
+                    <a href="/home" class="active">calulator</a>
+                    <a href="/getinfo">payment</a>
+                </div>
+
+    <body>
+        
+        <h1> ELECTRICITY CALULATOR </h1>
+
+          <form action="/home" method="POST">
+            <input type ="number" name="pre" id="pre" placeholder="Previous">
+            <input type="number"  name='val' id="val" placeholder="Current">
+            <br><br>
+            <!-- <button onclick="getvalue()">CALCULATE</button> -->
+            <input class="btn btn-success" type="submit" value="Submit">
+        </form>
+        
+        
+        
+        {% if sites[0] != 0: %}
+        <h1>The amount = {{sites[0]}}</h1>
+            
+        {% endif %}
+        
+        
+
+<!-- 
+        <script>
+            function getvalue()
+            {
+                
+
+                var a=document.getElementById("a").value;
+
+                if(a<=100)
+
+                {
+
+                    document.writeln("free")
+                }
+                else if(a>100 && a<=200)
+                {
+                    var b=a-100
+                    document.write(a*2.5);
+
+                }
+
+                else if(a>200 && a<=350)
+                {
+                    var b=a-100;
+                    document.write(a*2.5);
+                }
+                else if(a>350 && a<=500)
+                {
+                    var b=a-100;
+                    document.write('your electircity amount'+a*5);
+                }
+                else
+                {
+                    var b=a-100;
+                    document.write(b*7);
+                }
+
+            }
+            
+        </script> -->
+
+        
+
+    </body>
+    </center>
+</html>
